@@ -33,3 +33,5 @@ pip install --root=%{buildroot} --no-deps --verbose --ignore-installed --no-warn
 %files 
 %doc README.rst CHANGELOG.md
 %{_bindir}/versioningit
+%{python_sitelib}/versioningit-%{version}.dist-info
+%{python_sitelib}/versioningit/
