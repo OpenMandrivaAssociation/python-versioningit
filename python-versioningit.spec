@@ -1,5 +1,5 @@
 Name:           python-versioningit
-Version:        3.0.0
+Version:        3.1.2
 Release:        1
 Summary:        Versioning It with your Version In Git
 License:        MIT
