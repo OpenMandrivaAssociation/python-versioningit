@@ -9,6 +9,7 @@ Source0:        https://files.pythonhosted.org/packages/source/v/versioningit/ve
 BuildArch:      noarch
  
 BuildRequires:  pkgconfig(python)
+BuildRequires:	python%{pyver}dist(hatchling)
 BuildRequires:	python-wheel
 BuildRequires:	python-pip
 
@@ -24,11 +25,10 @@ Unlike others, it allows easy customization of the version format and even lets 
 %autosetup -n versioningit-%{version} -p1
  
 %build
-mkdir wheels
-pip wheel --wheel-dir wheels --no-deps --no-build-isolation --verbose .
+%py_build
 
 %install
-pip install --root=%{buildroot} --no-deps --verbose --ignore-installed --no-warn-script-location --no-index --no-cache-dir --find-links wheels wheels/*.whl
+%py_install
 
 %files 
 %doc README.rst CHANGELOG.md
