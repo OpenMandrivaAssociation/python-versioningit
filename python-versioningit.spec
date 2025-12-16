@@ -1,6 +1,6 @@
 Name:           python-versioningit
-Version:        3.1.2
-Release:        2
+Version:        3.3.0
+Release:        1
 Summary:        Versioning It with your Version In Git
 License:        MIT
 URL:            https://pypi.org/pypi/versioningit
