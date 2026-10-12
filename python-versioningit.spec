@@ -1,8 +1,9 @@
 Name:           python-versioningit
 Version:        3.3.0
-Release:        1
+Release:        2
 Summary:        Versioning It with your Version In Git
 License:        MIT
+Group:        Development/Python
 URL:            https://pypi.org/pypi/versioningit
 Source0:        https://files.pythonhosted.org/packages/source/v/versioningit/versioningit-%{version}.tar.gz
  
